@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Usercases  mounts properly with correct data 1`] = `
+exports[`UserCaseList  mounts properly with correct data 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <_default
@@ -8,10 +8,12 @@ ShallowWrapper {
       Array [
         Object {
           "description": "the first description",
+          "id": 1,
           "title": "usercase 1",
         },
         Object {
           "description": "the second description",
+          "id": 2,
           "title": "usercase 2",
         },
       ]
@@ -58,7 +60,7 @@ ShallowWrapper {
           >
             <Link
               replace={false}
-              to="undefined/1"
+              to="undefined/2"
             >
               usercase 2
             </Link>
@@ -155,7 +157,7 @@ ShallowWrapper {
             >
               <Link
                 replace={false}
-                to="undefined/1"
+                to="undefined/2"
               >
                 usercase 2
               </Link>
@@ -177,7 +179,7 @@ ShallowWrapper {
             "props": Object {
               "children": <Link
                 replace={false}
-                to="undefined/1"
+                to="undefined/2"
               >
                 usercase 2
               </Link>,
@@ -191,7 +193,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "usercase 2",
                 "replace": false,
-                "to": "undefined/1",
+                "to": "undefined/2",
               },
               "ref": null,
               "rendered": "usercase 2",
@@ -251,7 +253,7 @@ ShallowWrapper {
             >
               <Link
                 replace={false}
-                to="undefined/1"
+                to="undefined/2"
               >
                 usercase 2
               </Link>
@@ -348,7 +350,7 @@ ShallowWrapper {
               >
                 <Link
                   replace={false}
-                  to="undefined/1"
+                  to="undefined/2"
                 >
                   usercase 2
                 </Link>
@@ -370,7 +372,7 @@ ShallowWrapper {
               "props": Object {
                 "children": <Link
                   replace={false}
-                  to="undefined/1"
+                  to="undefined/2"
                 >
                   usercase 2
                 </Link>,
@@ -384,7 +386,7 @@ ShallowWrapper {
                 "props": Object {
                   "children": "usercase 2",
                   "replace": false,
-                  "to": "undefined/1",
+                  "to": "undefined/2",
                 },
                 "ref": null,
                 "rendered": "usercase 2",

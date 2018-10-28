@@ -1,4 +1,4 @@
-import UserCases from './userCases';
+import UserCases from './userCaseList';
 import UserCaseRoutes from './routes';
 
 export default UserCases;

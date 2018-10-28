@@ -1,33 +1,26 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
 
-import { UserCaseRoutes } from "./components/usercases";
-
+import { UserCaseRoutes } from './components/usercaselist';
+import { } from 'react-router-dom';
 class App extends Component {
   render() {
+
+    let PropRouter = this.props.router;
     return (
       <div className="App">
-        <Router>
+        <PropRouter>
           <Route
-            path="/usercases"
-            render={({ match }) => (
-              <UserCaseRoutes
-                match={match}
-                userCases={[
-                  {
-                    id: 1,
-                    title: "usercase 1",
-                    description: "the usercase description"
-                  }
-                ]}
-
-              />
-            )}
-          />
-        </Router>
+              path={"/usercases"}
+              render={usercaseroutes} />
+        </PropRouter>
       </div>
     );
   }
 }
 
+export const usercaseroutes = (props) => <UserCaseRoutes {...props} userCases={[
+    {  id: 1, title: "usercase 1", description: "the first description" },
+    { id: 2, title: "usercase 2", description: "the second description" }
+]}></UserCaseRoutes>;
 export default App;

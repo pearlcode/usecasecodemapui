@@ -1,11 +1,18 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import Enzyme, { shallow, mount } from "enzyme";
-import Adapter from "enzyme-adapter-react-16";
+import {
+  React,
+  ReactDOM,
+  Enzyme,
+  shallow,
+  mount,
+  Adapter,
+  shallowProps
+} from "./../../../__tests__/base";
 
-Enzyme.configure({ adapter: new Adapter() });
-describe('usercase', () => {
+import UserCase from "./../userCase";
 
-    it('should mount', () => {});
-
+describe("usercase", () => {
+  it("should mount", () => {
+     let wrapper = shallowProps(UserCase)
+      expect(wrapper).toMatchSnapshot();
+  });
 });
