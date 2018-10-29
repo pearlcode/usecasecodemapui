@@ -6,13 +6,15 @@ import {
   mount,
   Adapter,
   shallowProps
-} from "./../../../__tests__/base";
+} from './../../../__tests__/base';
 
-import UserCase from "./../userCase";
+import UserCase from './../userCase';
+import correctData from '../../../__mockdata__/correctUserCases';
 
-describe("usercase", () => {
-  it("should mount", () => {
-     let wrapper = shallowProps(UserCase)
-      expect(wrapper).toMatchSnapshot();
+describe('usercase', () => {
+  it('should mount', () => {
+    let wrapper = shallowProps(UserCase);
+    expect(wrapper).toMatchSnapshot();
+
   });
 });

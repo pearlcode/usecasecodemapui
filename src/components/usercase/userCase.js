@@ -1,3 +1,3 @@
 import React from "react";
 
-export default () => (<div>Usercase 1</div>)
+export default ({userId}) => (<div className="user-case">Usercase 1 {userId}</div>)

@@ -19,8 +19,10 @@ class App extends Component {
   }
 }
 
-export const usercaseroutes = (props) => <UserCaseRoutes {...props} userCases={[
+const userCases = [
     {  id: 1, title: "usercase 1", description: "the first description" },
     { id: 2, title: "usercase 2", description: "the second description" }
-]}></UserCaseRoutes>;
+];
+
+export const usercaseroutes = (props) => <UserCaseRoutes {...props} userCases={userCases}></UserCaseRoutes>;
 export default App;

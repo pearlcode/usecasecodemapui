@@ -2,20 +2,32 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import UserCaseList from './userCaseList';
 import UserCase from './../usercase';
-const UserCaseRoutes = ({ userCases, match }) => {
+const UserCaseRoutes = props => {
+    let userCases = props.userCases;
+    let match = props.match;
 
+    const Uc = UserCaseWrap(props);
 
-  return (
-    <Switch>
-      <Route path={`${match.path}/:userId`} component={() => <UserCase />} />
-      <Route
-        path={`${match.path}`}
-        render={() => (
-          <UserCaseList {...{ parentUrl: match.path, userCases }} />
-        )}
-      />
-    </Switch>
-  );
+    return (
+        <Switch>
+            <Route
+                path={`${match.path}/:userId`}
+                component={Uc}
+            />
+            <Route
+                path={`${match.path}`}
+                render={() => (
+                    <UserCaseList {...{ parentUrl: match.path, ...props }} />
+                )}
+            />
+        </Switch>
+    );
+};
+
+const UserCaseWrap = (props) => {
+    let userCases = props.userCases;
+    let match = props.match;
+    return () => (<UserCase {...{ userId: match.params.userId, ...props }} />);
 };
 
 

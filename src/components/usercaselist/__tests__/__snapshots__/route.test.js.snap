@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`routes should not error 1`] = `
+exports[`routes should render usercaseList 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
@@ -680,13 +680,15 @@ initialize {
 }
 `;
 
-exports[`routes should show first usercase 1`] = `
+exports[`routes should route to usercase without error 1`] = `
 initialize {
   "0": Object {
-    "attribs": Object {},
+    "attribs": Object {
+      "class": "user-case",
+    },
     "children": Array [
       Object {
-        "data": "Usercase 1",
+        "data": "Usercase 1 2",
         "next": null,
         "parent": [Circular],
         "prev": null,
@@ -713,8 +715,12 @@ initialize {
       "x-attribsPrefix": Object {},
     },
     "type": "tag",
-    "x-attribsNamespace": Object {},
-    "x-attribsPrefix": Object {},
+    "x-attribsNamespace": Object {
+      "class": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+    },
   },
   "_root": [Circular],
   "length": 1,

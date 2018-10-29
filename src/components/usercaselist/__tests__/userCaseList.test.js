@@ -9,7 +9,7 @@ import {
 } from "./../../../__tests__/base";
 
 import UserCaseList from "../userCaseList";
-import correctData from "../__mockdata__/correctUserCases";
+import correctData from "../../../__mockdata__/correctUserCases";
 
 Enzyme.configure({ adapter: new Adapter() });
 describe("UserCaseList ", () => {
