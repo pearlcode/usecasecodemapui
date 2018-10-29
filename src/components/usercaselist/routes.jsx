@@ -5,14 +5,13 @@ import UserCase from './../usercase';
 const UserCaseRoutes = props => {
     let userCases = props.userCases;
     let match = props.match;
-
-    const Uc = UserCaseWrap(props);
-
     return (
         <Switch>
             <Route
                 path={`${match.path}/:userId`}
-                component={Uc}
+                render={() => (
+                    <UserCase {...{ userId: match.params.userId, ...props }} />
+                )}
             />
             <Route
                 path={`${match.path}`}
@@ -23,12 +22,5 @@ const UserCaseRoutes = props => {
         </Switch>
     );
 };
-
-const UserCaseWrap = (props) => {
-    let userCases = props.userCases;
-    let match = props.match;
-    return () => (<UserCase {...{ userId: match.params.userId, ...props }} />);
-};
-
 
 export default UserCaseRoutes;
