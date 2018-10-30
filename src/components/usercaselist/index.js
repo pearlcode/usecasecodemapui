@@ -1,5 +1,4 @@
 import UserCases from './userCaseList';
-import UserCaseRoutes, { selectUserCase } from './routes';
-
+export {default as UserCaseRoutes } from './routes';
+export { selectById } from './selectors'
 export default UserCases;
-export { UserCaseRoutes, selectUserCase };
