@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import UserCaseList from './userCaseList';
 import UserCase from './../usercase';
-import { findUserCase } from './selectors';
+import { selectUserCase } from './selectors';
 const UserCaseRoutes = props => {
     let userCases = props.userCases;
     let match = props.match;
@@ -15,7 +15,7 @@ const UserCaseRoutes = props => {
                     <UserCase
                         {...{
                             userCases,
-                            userCase: findUserCase(
+                            userCase: selectUserCase(
                                 userCases,
                                 match.params.userId
                             ),

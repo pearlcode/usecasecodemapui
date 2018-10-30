@@ -1,5 +1,5 @@
 import UserCases from './userCaseList';
-import UserCaseRoutes,{findUserCase} from './routes';
+import UserCaseRoutes, { selectUserCase } from './routes';
 
 export default UserCases;
-export { UserCaseRoutes,findUserCase }
+export { UserCaseRoutes, selectUserCase };
