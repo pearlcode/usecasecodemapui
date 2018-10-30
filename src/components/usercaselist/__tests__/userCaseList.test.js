@@ -44,12 +44,16 @@ describe('UserCaseList ', () => {
     it('has 2 links to usercase/:userId', () => {
         let wrapper = mount(
             <Router {...{ initialEntries: [userCaseListPath] }}>
-                <Route path={`${userCaseListPath}/:userId`}
-                render={({match}) => (<UserCaseList
-                    {...{match,
-                        userCases: correctData
-                    }}
-                />)}
+                <Route
+                    path={`${userCaseListPath}`}
+                    render={({ match }) => (
+                        <UserCaseList
+                            {...{
+                                match,
+                                userCases: correctData
+                            }}
+                        />
+                    )}
                 />
             </Router>,
             {
@@ -57,7 +61,7 @@ describe('UserCaseList ', () => {
             }
         );
         const links = wrapper.find(Link);
-       // expect(links).toHaveLength(correctData.length);
+        expect(links).toHaveLength(correctData.length);
 
         links.forEach((node, i) => {
             expect(node.props().to).toEqual(
