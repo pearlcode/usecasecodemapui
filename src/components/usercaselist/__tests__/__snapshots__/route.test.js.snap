@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`routes /usercases/ should render 1`] = `
+exports[`routes /usercases should render 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
@@ -688,7 +688,7 @@ initialize {
     },
     "children": Array [
       Object {
-        "data": "Usercase 1 2",
+        "data": "Usercase 1",
         "next": null,
         "parent": [Circular],
         "prev": null,

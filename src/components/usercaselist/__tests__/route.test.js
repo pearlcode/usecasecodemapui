@@ -29,19 +29,21 @@ const mountRoute = props => {
 };
 
 const multiMountRoute = (
-    shallowOrRender,
+    renderType,
     { initialEntries } = { initialEntries: ['/usercases'] }
 ) => {
-    return shallowOrRender(
+    return renderType(
         <Router initialEntries={initialEntries}>
-            <Routes
-                {...{
-                    match: {
-                        path: '/usercases',
-                        params: { userId: correctData[1].id }
-                    },
-                    userCases: correctData
-                }}
+            <Route
+                path={userCaseListPath}
+                render={props => (
+                    <Routes
+                        {...{
+                            userCases: correctData,
+                            ...props
+                        }}
+                    />
+                )}
             />
         </Router>
     );
@@ -50,7 +52,7 @@ const multiMountRoute = (
 describe('routes', () => {
     beforeEach(() => {});
 
-    it('/usercases/ should render', () => {
+    it('/usercases should render', () => {
         let wrapper = renderRoute({ initialEntries: [userCaseListPath] });
         expect(wrapper).toMatchSnapshot();
     });
@@ -68,12 +70,12 @@ describe('routes', () => {
         expect(wrapper.find(UserCase)).toHaveLength(1);
     });
 
-    it('/usercases/ should be UserCase component', () => {
+    it('/usercases should be UserCase component', () => {
         const wrapper = mountRoute({ initialEntries: [userCaseListPath] });
         expect(wrapper.find(UserCaseList)).toHaveLength(1);
     });
 
-    it('/usercases/ no props should throw error', () => {
+    it('/usercases no props should throw error', () => {
         try {
             renderRoute({ initialEntries: [userCaseListPath] });
         } catch (e) {
