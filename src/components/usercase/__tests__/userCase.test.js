@@ -9,6 +9,7 @@ import {
 } from './../../../__tests__/base';
 
 import UserCase from './../userCase';
+
 import correctData from '../../../__mockdata__/correctUserCases';
 
 import { selectById } from './../../usercaselist/selectors';

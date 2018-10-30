@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import UserCaseList from './userCaseList';
-import UserCase from './../usercase';
+import UserCase from './../usercase/';
 import { selectById } from './selectors';
 const UserCaseRoutes = props => {
     let userCases = props.userCases;
