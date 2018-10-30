@@ -11,7 +11,7 @@ import {
 import UserCase from './../userCase';
 import correctData from '../../../__mockdata__/correctUserCases';
 
-import { findUserCase } from './../../usercaselist';
+import { findUserCase } from './../../usercaselist/selectors';
 
 describe('usercase', () => {
     it('should mount', () => {
