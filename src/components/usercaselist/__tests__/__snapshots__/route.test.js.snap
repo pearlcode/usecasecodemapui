@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`routes should render usercaseList 1`] = `
+exports[`routes /usercases/ should render 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
@@ -680,7 +680,7 @@ initialize {
 }
 `;
 
-exports[`routes should route to usercase without error 1`] = `
+exports[`routes /usercases/:userId should render 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {

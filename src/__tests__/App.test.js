@@ -6,7 +6,7 @@ import {
     mount,
     render,
     Adapter,
-    shallowProps
+    shallowWithProps
 } from './base';
 
 import App, { usercaseroutes } from '../App';

@@ -6,7 +6,7 @@ import {
     mount,
     render,
     Adapter,
-    shallowProps
+    shallowWithProps
 } from './../../../__tests__/base';
 import { MemoryRouter as Router, Route, Switch } from 'react-router';
 import Routes from '../routes';
