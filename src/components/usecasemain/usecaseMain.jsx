@@ -3,7 +3,7 @@ import UsecaseMainRoutes from './routes';
 
 const UsecaseMain = props => (
     <div className="user-case-main">
-usecase main
+        <div className="section-header">usecase dashboard</div>
         <UsecaseMainRoutes {...props} />
     </div>
 );

@@ -2,6 +2,7 @@ import { MemoryRouter as MRouter } from 'react-router-dom';
 import {
     React,
     shallow,
+    mount,
     render,
 } from './base';
 
@@ -15,6 +16,7 @@ describe('App ', () => {
             <MRouter initialEntries={['/usecases']} context={context} />
         );
 
+        mount(<App router={router} />);
         const wrapper = render(<App router={router} />);
         expect(wrapper).toMatchSnapshot();
 

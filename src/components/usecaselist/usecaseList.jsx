@@ -4,7 +4,6 @@ import propTypes from 'prop-types';
 
 const usecaseList = ({ usecases, match }) => (
     <div className="user-cases">
-        <button type="button">new usecase</button>
         {usecases.map(usecase => (
             <li key={usecase.id} className="user-case">
                 <div className="user-case__title">

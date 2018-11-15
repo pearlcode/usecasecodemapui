@@ -38,68 +38,49 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <button
-          type="button"
+        <li
+          className="user-case"
         >
-          new usecase
-        </button>,
-        Array [
-          <li
-            className="user-case"
+          <div
+            className="user-case__title"
           >
-            <div
-              className="user-case__title"
+            <Link
+              replace={false}
+              to="/usecases/1"
             >
-              <Link
-                replace={false}
-                to="/usecases/1"
-              >
-                usecase 1
-              </Link>
-            </div>
-            <div
-              className="user-case__description"
-            >
-              the first description
-            </div>
-          </li>,
-          <li
-            className="user-case"
+              usecase 1
+            </Link>
+          </div>
+          <div
+            className="user-case__description"
           >
-            <div
-              className="user-case__title"
+            the first description
+          </div>
+        </li>,
+        <li
+          className="user-case"
+        >
+          <div
+            className="user-case__title"
+          >
+            <Link
+              replace={false}
+              to="/usecases/2"
             >
-              <Link
-                replace={false}
-                to="/usecases/2"
-              >
-                usecase 2
-              </Link>
-            </div>
-            <div
-              className="user-case__description"
-            >
-              the second description
-            </div>
-          </li>,
-        ],
+              usecase 2
+            </Link>
+          </div>
+          <div
+            className="user-case__description"
+          >
+            the second description
+          </div>
+        </li>,
       ],
       "className": "user-cases",
     },
     "ref": null,
     "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "new usecase",
-          "type": "button",
-        },
-        "ref": null,
-        "rendered": "new usecase",
-        "type": "button",
-      },
       Object {
         "instance": null,
         "key": "1",
@@ -250,68 +231,49 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <button
-            type="button"
+          <li
+            className="user-case"
           >
-            new usecase
-          </button>,
-          Array [
-            <li
-              className="user-case"
+            <div
+              className="user-case__title"
             >
-              <div
-                className="user-case__title"
+              <Link
+                replace={false}
+                to="/usecases/1"
               >
-                <Link
-                  replace={false}
-                  to="/usecases/1"
-                >
-                  usecase 1
-                </Link>
-              </div>
-              <div
-                className="user-case__description"
-              >
-                the first description
-              </div>
-            </li>,
-            <li
-              className="user-case"
+                usecase 1
+              </Link>
+            </div>
+            <div
+              className="user-case__description"
             >
-              <div
-                className="user-case__title"
+              the first description
+            </div>
+          </li>,
+          <li
+            className="user-case"
+          >
+            <div
+              className="user-case__title"
+            >
+              <Link
+                replace={false}
+                to="/usecases/2"
               >
-                <Link
-                  replace={false}
-                  to="/usecases/2"
-                >
-                  usecase 2
-                </Link>
-              </div>
-              <div
-                className="user-case__description"
-              >
-                the second description
-              </div>
-            </li>,
-          ],
+                usecase 2
+              </Link>
+            </div>
+            <div
+              className="user-case__description"
+            >
+              the second description
+            </div>
+          </li>,
         ],
         "className": "user-cases",
       },
       "ref": null,
       "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "new usecase",
-            "type": "button",
-          },
-          "ref": null,
-          "rendered": "new usecase",
-          "type": "button",
-        },
         Object {
           "instance": null,
           "key": "1",
