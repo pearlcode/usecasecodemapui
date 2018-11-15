@@ -2,8 +2,8 @@ import { MemoryRouter as MRouter, Route } from 'react-router-dom';
 import { React, mount } from './base';
 
 import correctData from '../../../__mockdata__/correctUsecases';
-import AppRoutes  from '../routes';
-import UsecaseMainRoutes from '../../usecasemain/routes'
+import AppRoutes from '../routes';
+import UsecaseMainRoutes from '../../usecasemain/routes';
 
 const usecaseListPath = '/usecases';
 describe('App ', () => {
@@ -21,7 +21,7 @@ describe('App ', () => {
             </MRouter>,
         );
 
-       // expect(wrapper.find())
+        // expect(wrapper.find())
 
         expect(wrapper.find(UsecaseMainRoutes)).toHaveLength(1);
     });

@@ -3,8 +3,8 @@ import propTypes from 'prop-types';
 
 const UseCase = ({ usecase }) => (
     <div className="user-case">
-usecase
-        {usecase.id}
+        <span>usecase </span>
+        <span>{usecase.id}</span>
     </div>
 );
 
