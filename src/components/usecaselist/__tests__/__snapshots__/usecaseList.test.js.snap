@@ -1,25 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`UserCaseList  mounts properly with correct data 1`] = `
+exports[`UsecaseList  mounts properly with correct data 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <userCaseList
+  Symbol(enzyme.__unrendered__): <usecaseList
     match={
       Object {
-        "url": "/usercases",
+        "url": "/usecases",
       }
     }
-    userCases={
+    usecases={
       Array [
         Object {
           "description": "the first description",
           "id": 1,
-          "title": "usercase 1",
+          "title": "usecase 1",
         },
         Object {
           "description": "the second description",
           "id": 2,
-          "title": "usercase 2",
+          "title": "usecase 2",
         },
       ]
     }
@@ -41,7 +41,7 @@ ShallowWrapper {
         <button
           type="button"
         >
-          new usercase
+          new usecase
         </button>,
         Array [
           <li
@@ -52,9 +52,9 @@ ShallowWrapper {
             >
               <Link
                 replace={false}
-                to="/usercases/1"
+                to="/usecases/1"
               >
-                usercase 1
+                usecase 1
               </Link>
             </div>
             <div
@@ -71,9 +71,9 @@ ShallowWrapper {
             >
               <Link
                 replace={false}
-                to="/usercases/2"
+                to="/usecases/2"
               >
-                usercase 2
+                usecase 2
               </Link>
             </div>
             <div
@@ -93,11 +93,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "new usercase",
+          "children": "new usecase",
           "type": "button",
         },
         "ref": null,
-        "rendered": "new usercase",
+        "rendered": "new usecase",
         "type": "button",
       },
       Object {
@@ -111,9 +111,9 @@ ShallowWrapper {
             >
               <Link
                 replace={false}
-                to="/usercases/1"
+                to="/usecases/1"
               >
-                usercase 1
+                usecase 1
               </Link>
             </div>,
             <div
@@ -133,9 +133,9 @@ ShallowWrapper {
             "props": Object {
               "children": <Link
                 replace={false}
-                to="/usercases/1"
+                to="/usecases/1"
               >
-                usercase 1
+                usecase 1
               </Link>,
               "className": "user-case__title",
             },
@@ -145,12 +145,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "usercase 1",
+                "children": "usecase 1",
                 "replace": false,
-                "to": "/usercases/1",
+                "to": "/usecases/1",
               },
               "ref": null,
-              "rendered": "usercase 1",
+              "rendered": "usecase 1",
               "type": [Function],
             },
             "type": "div",
@@ -181,9 +181,9 @@ ShallowWrapper {
             >
               <Link
                 replace={false}
-                to="/usercases/2"
+                to="/usecases/2"
               >
-                usercase 2
+                usecase 2
               </Link>
             </div>,
             <div
@@ -203,9 +203,9 @@ ShallowWrapper {
             "props": Object {
               "children": <Link
                 replace={false}
-                to="/usercases/2"
+                to="/usecases/2"
               >
-                usercase 2
+                usecase 2
               </Link>,
               "className": "user-case__title",
             },
@@ -215,12 +215,12 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "usercase 2",
+                "children": "usecase 2",
                 "replace": false,
-                "to": "/usercases/2",
+                "to": "/usecases/2",
               },
               "ref": null,
-              "rendered": "usercase 2",
+              "rendered": "usecase 2",
               "type": [Function],
             },
             "type": "div",
@@ -253,7 +253,7 @@ ShallowWrapper {
           <button
             type="button"
           >
-            new usercase
+            new usecase
           </button>,
           Array [
             <li
@@ -264,9 +264,9 @@ ShallowWrapper {
               >
                 <Link
                   replace={false}
-                  to="/usercases/1"
+                  to="/usecases/1"
                 >
-                  usercase 1
+                  usecase 1
                 </Link>
               </div>
               <div
@@ -283,9 +283,9 @@ ShallowWrapper {
               >
                 <Link
                   replace={false}
-                  to="/usercases/2"
+                  to="/usecases/2"
                 >
-                  usercase 2
+                  usecase 2
                 </Link>
               </div>
               <div
@@ -305,11 +305,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "new usercase",
+            "children": "new usecase",
             "type": "button",
           },
           "ref": null,
-          "rendered": "new usercase",
+          "rendered": "new usecase",
           "type": "button",
         },
         Object {
@@ -323,9 +323,9 @@ ShallowWrapper {
               >
                 <Link
                   replace={false}
-                  to="/usercases/1"
+                  to="/usecases/1"
                 >
-                  usercase 1
+                  usecase 1
                 </Link>
               </div>,
               <div
@@ -345,9 +345,9 @@ ShallowWrapper {
               "props": Object {
                 "children": <Link
                   replace={false}
-                  to="/usercases/1"
+                  to="/usecases/1"
                 >
-                  usercase 1
+                  usecase 1
                 </Link>,
                 "className": "user-case__title",
               },
@@ -357,12 +357,12 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": "usercase 1",
+                  "children": "usecase 1",
                   "replace": false,
-                  "to": "/usercases/1",
+                  "to": "/usecases/1",
                 },
                 "ref": null,
-                "rendered": "usercase 1",
+                "rendered": "usecase 1",
                 "type": [Function],
               },
               "type": "div",
@@ -393,9 +393,9 @@ ShallowWrapper {
               >
                 <Link
                   replace={false}
-                  to="/usercases/2"
+                  to="/usecases/2"
                 >
-                  usercase 2
+                  usecase 2
                 </Link>
               </div>,
               <div
@@ -415,9 +415,9 @@ ShallowWrapper {
               "props": Object {
                 "children": <Link
                   replace={false}
-                  to="/usercases/2"
+                  to="/usecases/2"
                 >
-                  usercase 2
+                  usecase 2
                 </Link>,
                 "className": "user-case__title",
               },
@@ -427,12 +427,12 @@ ShallowWrapper {
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": "usercase 2",
+                  "children": "usecase 2",
                   "replace": false,
-                  "to": "/usercases/2",
+                  "to": "/usecases/2",
                 },
                 "ref": null,
-                "rendered": "usercase 2",
+                "rendered": "usecase 2",
                 "type": [Function],
               },
               "type": "div",

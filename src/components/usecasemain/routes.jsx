@@ -1,23 +1,23 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import propTypes from 'prop-types';
-import UserCaseList from '../usercaselist/userCaseList';
-import UserCase from '../usercase';
-import selectById from '../usercaselist/selectors';
+import UsecaseList from '../usecaselist/usecaseList';
+import Usecase from '../usecase';
+import selectById from '../usecaselist/selectors';
 
-const UsercaseMainRoutes = (props) => {
-    const { userCases, match: rmatch } = props;
+const UsecaseMainRoutes = (props) => {
+    const { usecases, match: rmatch } = props;
     return (
         <Switch>
             <Route
                 path={`${rmatch.path}/:userId`}
                 render={({ match }) => (
-                    <UserCase
+                    <Usecase
                         {...{
-                            userCases,
-                            userCase: selectById(
+                            usecases,
+                            usecase: selectById(
                                 match.params.userId,
-                                userCases,
+                                usecases,
                             ),
                             userId: match.params.userId,
                             match,
@@ -27,15 +27,15 @@ const UsercaseMainRoutes = (props) => {
             />
             <Route
                 path={`${rmatch.path}`}
-                render={() => <UserCaseList {...props} />}
+                render={() => <UsecaseList {...props} />}
             />
         </Switch>
     );
 };
 
-UsercaseMainRoutes.propTypes = {
-    userCases: propTypes.arrayOf(propTypes.shape({})).isRequired,
+UsecaseMainRoutes.propTypes = {
+    usecases: propTypes.arrayOf(propTypes.shape({})).isRequired,
     match: propTypes.shape({}).isRequired,
 };
 
-export default UsercaseMainRoutes;
+export default UsecaseMainRoutes;

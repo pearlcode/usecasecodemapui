@@ -1,11 +1,11 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import { UsercaseMainRoutes } from '../usercasemain/index';
+import UsecaseMain from '../usecasemain';
 import AppRoutes from '../../routes';
 
-const userCases = [
-    { id: 1, title: 'usercase 1', description: 'the first description' },
-    { id: 2, title: 'usercase 2', description: 'the second description' },
+const usecases = [
+    { id: 1, title: 'usecase 1', description: 'the first description' },
+    { id: 2, title: 'usecase 2', description: 'the second description' },
 ];
 const App = ({ router }) => {
     const PropRouter = router;
@@ -13,14 +13,14 @@ const App = ({ router }) => {
     return (
         <div className="App">
             <PropRouter>
-                <AppRoutes userCases={userCases} />
+                <AppRoutes usecases={usecases} />
             </PropRouter>
         </div>
     );
 };
 
-export const usercaseroutes = props => (
-    <UsercaseMainRoutes {...props} userCases={userCases} />
+export const usecaseroutes = props => (
+    <UsecaseMain {...props} usecases={usecases} />
 );
 
 App.propTypes = {

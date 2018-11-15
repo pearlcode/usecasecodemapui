@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`routes /usercases should render 1`] = `
+exports[`routes /usecases should render 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
@@ -13,7 +13,7 @@ initialize {
         },
         "children": Array [
           Object {
-            "data": "new usercase",
+            "data": "new usecase",
             "next": null,
             "parent": [Circular],
             "prev": null,
@@ -34,11 +34,11 @@ initialize {
               "children": Array [
                 Object {
                   "attribs": Object {
-                    "href": "/usercases/1",
+                    "href": "/usecases/1",
                   },
                   "children": Array [
                     Object {
-                      "data": "usercase 1",
+                      "data": "usecase 1",
                       "next": null,
                       "parent": [Circular],
                       "prev": null,
@@ -121,11 +121,11 @@ initialize {
                 "children": Array [
                   Object {
                     "attribs": Object {
-                      "href": "/usercases/1",
+                      "href": "/usecases/1",
                     },
                     "children": Array [
                       Object {
-                        "data": "usercase 1",
+                        "data": "usecase 1",
                         "next": null,
                         "parent": [Circular],
                         "prev": null,
@@ -182,11 +182,11 @@ initialize {
                 "children": Array [
                   Object {
                     "attribs": Object {
-                      "href": "/usercases/2",
+                      "href": "/usecases/2",
                     },
                     "children": Array [
                       Object {
-                        "data": "usercase 2",
+                        "data": "usecase 2",
                         "next": null,
                         "parent": [Circular],
                         "prev": null,
@@ -269,11 +269,11 @@ initialize {
                   "children": Array [
                     Object {
                       "attribs": Object {
-                        "href": "/usercases/2",
+                        "href": "/usecases/2",
                       },
                       "children": Array [
                         Object {
-                          "data": "usercase 2",
+                          "data": "usecase 2",
                           "next": null,
                           "parent": [Circular],
                           "prev": null,
@@ -361,11 +361,11 @@ initialize {
             "children": Array [
               Object {
                 "attribs": Object {
-                  "href": "/usercases/1",
+                  "href": "/usecases/1",
                 },
                 "children": Array [
                   Object {
-                    "data": "usercase 1",
+                    "data": "usecase 1",
                     "next": null,
                     "parent": [Circular],
                     "prev": null,
@@ -448,11 +448,11 @@ initialize {
               "children": Array [
                 Object {
                   "attribs": Object {
-                    "href": "/usercases/1",
+                    "href": "/usecases/1",
                   },
                   "children": Array [
                     Object {
-                      "data": "usercase 1",
+                      "data": "usecase 1",
                       "next": null,
                       "parent": [Circular],
                       "prev": null,
@@ -509,11 +509,11 @@ initialize {
               "children": Array [
                 Object {
                   "attribs": Object {
-                    "href": "/usercases/2",
+                    "href": "/usecases/2",
                   },
                   "children": Array [
                     Object {
-                      "data": "usercase 2",
+                      "data": "usecase 2",
                       "next": null,
                       "parent": [Circular],
                       "prev": null,
@@ -596,11 +596,11 @@ initialize {
                 "children": Array [
                   Object {
                     "attribs": Object {
-                      "href": "/usercases/2",
+                      "href": "/usecases/2",
                     },
                     "children": Array [
                       Object {
-                        "data": "usercase 2",
+                        "data": "usecase 2",
                         "next": null,
                         "parent": [Circular],
                         "prev": null,
@@ -663,7 +663,7 @@ initialize {
           },
           "children": Array [
             Object {
-              "data": "new usercase",
+              "data": "new usecase",
               "next": null,
               "parent": [Circular],
               "prev": null,
@@ -703,11 +703,11 @@ initialize {
             "children": Array [
               Object {
                 "attribs": Object {
-                  "href": "/usercases/2",
+                  "href": "/usecases/2",
                 },
                 "children": Array [
                   Object {
-                    "data": "usercase 2",
+                    "data": "usecase 2",
                     "next": null,
                     "parent": [Circular],
                     "prev": null,
@@ -790,11 +790,11 @@ initialize {
               "children": Array [
                 Object {
                   "attribs": Object {
-                    "href": "/usercases/2",
+                    "href": "/usecases/2",
                   },
                   "children": Array [
                     Object {
-                      "data": "usercase 2",
+                      "data": "usecase 2",
                       "next": null,
                       "parent": [Circular],
                       "prev": null,
@@ -853,11 +853,11 @@ initialize {
               "children": Array [
                 Object {
                   "attribs": Object {
-                    "href": "/usercases/1",
+                    "href": "/usecases/1",
                   },
                   "children": Array [
                     Object {
-                      "data": "usercase 1",
+                      "data": "usecase 1",
                       "next": null,
                       "parent": [Circular],
                       "prev": null,
@@ -940,11 +940,11 @@ initialize {
                 "children": Array [
                   Object {
                     "attribs": Object {
-                      "href": "/usercases/1",
+                      "href": "/usecases/1",
                     },
                     "children": Array [
                       Object {
-                        "data": "usercase 1",
+                        "data": "usecase 1",
                         "next": null,
                         "parent": [Circular],
                         "prev": null,
@@ -997,7 +997,7 @@ initialize {
             },
             "children": Array [
               Object {
-                "data": "new usercase",
+                "data": "new usecase",
                 "next": null,
                 "parent": [Circular],
                 "prev": null,
@@ -1072,7 +1072,7 @@ initialize {
 }
 `;
 
-exports[`routes /usercases/:userId should render 1`] = `
+exports[`routes /usecases/:userId should render 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {
@@ -1080,7 +1080,7 @@ initialize {
     },
     "children": Array [
       Object {
-        "data": "Usercase1",
+        "data": "usecase1",
         "next": null,
         "parent": [Circular],
         "prev": null,

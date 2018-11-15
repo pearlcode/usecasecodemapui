@@ -1,25 +1,25 @@
 import { MemoryRouter as MRouter, Route } from 'react-router-dom';
 import { React, mount } from './base';
 
-import correctData from '../../../__mockdata__/correctUserCases';
-import AppRoutes, { UsercaseMainRoutes } from '../../../routes';
+import correctData from '../../../__mockdata__/correctUsecases';
+import AppRoutes, { UsecaseMainRoutes } from '../../../routes';
 
-const userCaseListPath = '/usercases';
+const usecaseListPath = '/usecases';
 describe('App ', () => {
-    it('/usercases/ should use UserCaseRoutes component', () => {
+    it('/usecases/ should use usecaseRoutes component', () => {
         const wrapper = mount(
-            <MRouter {...{ initialEntries: [userCaseListPath] }}>
+            <MRouter {...{ initialEntries: [usecaseListPath] }}>
                 <div>
                     <Route
-                        path={userCaseListPath}
+                        path={usecaseListPath}
                         render={({ match }) => (
-                            <AppRoutes {...{ match, userCases: correctData }} />
+                            <AppRoutes {...{ match, usecases: correctData }} />
                         )}
                     />
                 </div>
             </MRouter>,
         );
 
-        expect(wrapper.find(UsercaseMainRoutes)).toHaveLength(1);
+        expect(wrapper.find(UsecaseMainRoutes)).toHaveLength(1);
     });
 });

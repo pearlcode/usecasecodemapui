@@ -5,16 +5,16 @@ import {
     mount,
     shallowWithProps,
 } from '../../app/__tests__/base';
-import UserCaseList from '../index';
-import correctData from '../../../__mockdata__/correctUserCases';
+import UsecaseList from '../index';
+import correctData from '../../../__mockdata__/correctUsecases';
 
-const userCaseListPath = '/usercases';
+const usecaseListPath = '/usecases';
 
-describe('UserCaseList ', () => {
+describe('UsecaseList ', () => {
     it('mounts properly with correct data', () => {
-        const wrapper = shallowWithProps(UserCaseList, {
-            userCases: correctData,
-            match: { url: '/usercases' },
+        const wrapper = shallowWithProps(UsecaseList, {
+            usecases: correctData,
+            match: { url: '/usecases' },
         });
         expect(wrapper).toMatchSnapshot();
 
@@ -33,23 +33,23 @@ describe('UserCaseList ', () => {
         ).toEqual(true);
     });
 
-    it('has 2 links to usercase/:userId', () => {
+    it('has 2 links to usecase/:userId', () => {
         const wrapper = mount(
-            <Router {...{ initialEntries: [userCaseListPath] }}>
+            <Router {...{ initialEntries: [usecaseListPath] }}>
                 <Route
-                    path={`${userCaseListPath}`}
+                    path={`${usecaseListPath}`}
                     render={({ match }) => (
-                        <UserCaseList
+                        <UsecaseList
                             {...{
                                 match,
-                                userCases: correctData,
+                                usecases: correctData,
                             }}
                         />
                     )}
                 />
             </Router>,
             {
-                userCases: correctData,
+                usecases: correctData,
             },
         );
         const links = wrapper.find(Link);
@@ -57,7 +57,7 @@ describe('UserCaseList ', () => {
 
         links.forEach((node, i) => {
             expect(node.props().to).toEqual(
-                `${userCaseListPath}/${correctData[i].id}`,
+                `${usecaseListPath}/${correctData[i].id}`,
             );
         });
     });

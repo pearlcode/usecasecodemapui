@@ -1,14 +1,14 @@
 import { Route } from 'react-router-dom';
 import React from 'react';
-import { UsercaseMainRoutes } from './components/usercasemain';
+import { UsecaseMainRoutes } from './components/usecasemain';
 
-export default ({ userCases }) => (
+export default ({ usecases }) => (
     <Route
-        path="/usercases"
+        path="/usecases"
         render={({ match }) => (
-            <UsercaseMainRoutes {...{ match }} userCases={userCases} />
+            <UsecaseMainRoutes {...{ match }} usecases={usecases} />
         )}
     />
 );
 
-export { UsercaseMainRoutes };
+export { UsecaseMainRoutes };

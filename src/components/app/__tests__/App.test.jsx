@@ -5,19 +5,19 @@ import {
     render,
 } from './base';
 
-import App, { usercaseroutes } from '../app';
+import App, { usecaseroutes } from '../app';
 
 describe('App ', () => {
     it('renders without crashing', () => {
         const context = {};
 
         const router = () => (
-            <MRouter initialEntries={['/usercases']} context={context} />
+            <MRouter initialEntries={['/usecases']} context={context} />
         );
 
         const wrapper = render(<App router={router} />);
         expect(wrapper).toMatchSnapshot();
 
-        shallow(usercaseroutes({ match: { path: '/usercases' } }));
+        shallow(usecaseroutes({ match: { path: '/usecases' } }));
     });
 });
