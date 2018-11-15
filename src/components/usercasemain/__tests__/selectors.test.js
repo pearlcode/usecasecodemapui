@@ -1,15 +1,15 @@
 import correctData from '../../../__mockdata__/correctUserCases';
-import { selectById } from '../selectors';
+import selectById from '../../usercaselist/selectors';
 
 describe('selectWithId', () => {
     it('should select usercase with id ID', () => {
-        const userCase = selectById(1,correctData);
+        const userCase = selectById(1, correctData);
 
         expect(userCase.id).toEqual(1);
     });
 
     it('should return undefined with undefined id', () => {
-        const userCase = selectById(undefined,correctData);
+        const userCase = selectById(undefined, correctData);
 
         expect(userCase).toEqual(undefined);
     });
@@ -21,7 +21,7 @@ describe('selectWithId', () => {
     });
 
     it('should return undefined with object at index 0 not containing id', () => {
-        const userCase = selectById(undefined,[{}]);
+        const userCase = selectById(undefined, [{}]);
 
         expect(userCase).toEqual(undefined);
     });

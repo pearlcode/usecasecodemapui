@@ -1,65 +1,55 @@
-import {
-    React,
-    ReactDOM,
-    Enzyme,
-    shallow,
-    mount,
-    render,
-    Adapter,
-    shallowWithProps
-} from './../../../__tests__/base';
-import { MemoryRouter as Router, Route, Switch } from 'react-router';
+/* eslint-disable react/jsx-filename-extension */
+import React from 'react';
+import { MemoryRouter as Router, Route } from 'react-router-dom';
+import { mount, render } from '../../app/__tests__/base';
 import Routes from '../routes';
 import correctData from '../../../__mockdata__/correctUserCases';
-import UserCase from './../../usercase/userCase';
-import UserCaseList from './../userCaseList';
+import UserCase from '../../usercase/userCase';
+import UserCaseList from '../../usercaselist/userCaseList';
+
 const userCaseListPath = '/usercases';
 const userCasePath = `${userCaseListPath}/${correctData[0].id}`;
 
-const shallowRoute = () => {
-    return multiMountRoute(shallow);
-};
-
-const renderRoute = props => {
-    return multiMountRoute(render, props);
-};
-
-const mountRoute = props => {
-    return multiMountRoute(mount, props);
-};
-
 const multiMountRoute = (
     renderType,
-    { initialEntries } = { initialEntries: ['/usercases'] }
-) => {
-    return renderType(
-        <Router initialEntries={initialEntries}>
-            <Route
-                path={userCaseListPath}
-                render={props => (
-                    <Routes
-                        {...{
-                            userCases: correctData,
-                            ...props
-                        }}
-                    />
-                )}
-            />
-        </Router>
-    );
-};
+    { initialEntries } = { initialEntries: ['/usercases'] },
+) => renderType(
+    <Router initialEntries={initialEntries}>
+        <Route
+            path={userCaseListPath}
+            render={props => (
+                <Routes
+                    {...{
+                        userCases: correctData,
+                        ...props,
+                    }}
+                />
+            )}
+        />
+    </Router>,
+);
+
+const renderRoute = props => multiMountRoute(render, props);
+
+const mountRoute = props => multiMountRoute(mount, props);
+
 
 describe('routes', () => {
+    const expectPathError = (e) => {
+        expect(e.name).toEqual('TypeError');
+        expect(e.message).toEqual("Cannot read property 'path' of undefined");
+    };
+
     beforeEach(() => {});
 
     it('/usercases should render', () => {
-        let wrapper = renderRoute({ initialEntries: [userCaseListPath] });
+        const wrapper = renderRoute({ initialEntries: [userCaseListPath] });
         expect(wrapper).toMatchSnapshot();
     });
 
     it('/usercases/:userId should render', () => {
         const wrapper = renderRoute({
-            initialEntries: [userCasePath]
+            initialEntries: [userCasePath],
         });
 
         expect(wrapper).toMatchSnapshot();
@@ -90,9 +80,4 @@ describe('routes', () => {
             expectPathError(e);
         }
     });
-
-    const expectPathError = e => {
-        expect(e.name).toEqual('TypeError');
-        expect(e.message).toEqual("Cannot read property 'path' of undefined");
-    };
 });

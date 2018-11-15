@@ -3,7 +3,7 @@
 exports[`usercase should mount 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <_default
+  Symbol(enzyme.__unrendered__): <UseCase
     userCase={
       Object {
         "description": "the first description",
@@ -26,14 +26,14 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        "Usercase ",
+        "Usercase",
         1,
       ],
       "className": "user-case",
     },
     "ref": null,
     "rendered": Array [
-      "Usercase ",
+      "Usercase",
       1,
     ],
     "type": "div",
@@ -45,14 +45,14 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          "Usercase ",
+          "Usercase",
           1,
         ],
         "className": "user-case",
       },
       "ref": null,
       "rendered": Array [
-        "Usercase ",
+        "Usercase",
         1,
       ],
       "type": "div",

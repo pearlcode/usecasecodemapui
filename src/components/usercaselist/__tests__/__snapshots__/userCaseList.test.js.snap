@@ -3,7 +3,7 @@
 exports[`UserCaseList  mounts properly with correct data 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <_default
+  Symbol(enzyme.__unrendered__): <userCaseList
     match={
       Object {
         "url": "/usercases",
@@ -38,44 +38,51 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <li
-          className="user-case"
+        <button
+          type="button"
         >
-          <div
-            className="user-case__title"
+          new usercase
+        </button>,
+        Array [
+          <li
+            className="user-case"
           >
-            <Link
-              replace={false}
-              to="/usercases/1"
+            <div
+              className="user-case__title"
             >
-              usercase 1
-            </Link>
-          </div>
-          <div
-            className="user-case__description"
-          >
-            the first description
-          </div>
-        </li>,
-        <li
-          className="user-case"
-        >
-          <div
-            className="user-case__title"
-          >
-            <Link
-              replace={false}
-              to="/usercases/2"
+              <Link
+                replace={false}
+                to="/usercases/1"
+              >
+                usercase 1
+              </Link>
+            </div>
+            <div
+              className="user-case__description"
             >
-              usercase 2
-            </Link>
-          </div>
-          <div
-            className="user-case__description"
+              the first description
+            </div>
+          </li>,
+          <li
+            className="user-case"
           >
-            the second description
-          </div>
-        </li>,
+            <div
+              className="user-case__title"
+            >
+              <Link
+                replace={false}
+                to="/usercases/2"
+              >
+                usercase 2
+              </Link>
+            </div>
+            <div
+              className="user-case__description"
+            >
+              the second description
+            </div>
+          </li>,
+        ],
       ],
       "className": "user-cases",
     },
@@ -83,7 +90,19 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "0",
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "new usercase",
+          "type": "button",
+        },
+        "ref": null,
+        "rendered": "new usercase",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": "1",
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -153,7 +172,7 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "1",
+        "key": "2",
         "nodeType": "host",
         "props": Object {
           "children": Array [
@@ -231,44 +250,51 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <li
-            className="user-case"
+          <button
+            type="button"
           >
-            <div
-              className="user-case__title"
+            new usercase
+          </button>,
+          Array [
+            <li
+              className="user-case"
             >
-              <Link
-                replace={false}
-                to="/usercases/1"
+              <div
+                className="user-case__title"
               >
-                usercase 1
-              </Link>
-            </div>
-            <div
-              className="user-case__description"
-            >
-              the first description
-            </div>
-          </li>,
-          <li
-            className="user-case"
-          >
-            <div
-              className="user-case__title"
-            >
-              <Link
-                replace={false}
-                to="/usercases/2"
+                <Link
+                  replace={false}
+                  to="/usercases/1"
+                >
+                  usercase 1
+                </Link>
+              </div>
+              <div
+                className="user-case__description"
               >
-                usercase 2
-              </Link>
-            </div>
-            <div
-              className="user-case__description"
+                the first description
+              </div>
+            </li>,
+            <li
+              className="user-case"
             >
-              the second description
-            </div>
-          </li>,
+              <div
+                className="user-case__title"
+              >
+                <Link
+                  replace={false}
+                  to="/usercases/2"
+                >
+                  usercase 2
+                </Link>
+              </div>
+              <div
+                className="user-case__description"
+              >
+                the second description
+              </div>
+            </li>,
+          ],
         ],
         "className": "user-cases",
       },
@@ -276,7 +302,19 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "0",
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "new usercase",
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": "new usercase",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": "1",
           "nodeType": "host",
           "props": Object {
             "children": Array [
@@ -346,7 +384,7 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "1",
+          "key": "2",
           "nodeType": "host",
           "props": Object {
             "children": Array [
