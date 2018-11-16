@@ -27,7 +27,7 @@ const UsecaseMainRoutes = (props) => {
             />
             <Route
                 path={`${rmatch.path}`}
-                render={() => <UsecaseList {...props} />}
+                render={rprops => <UsecaseList usecases={usecases} {...props} {...rprops} />}
             />
         </Switch>
     );

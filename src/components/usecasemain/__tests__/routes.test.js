@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react';
 import { MemoryRouter as Router, Route } from 'react-router-dom';
-import { mount, render } from '../../app/__tests__/base';
+import { mount, render } from '../../../__tests__/common/base';
 import Routes from '../routes';
 import correctData from '../../../__mockdata__/correctUsecases';
 import Usecase from '../../usecase/usecase';

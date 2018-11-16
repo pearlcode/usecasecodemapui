@@ -4,7 +4,7 @@ import {
     React,
     mount,
     shallowWithProps,
-} from '../../app/__tests__/base';
+} from '../../../__tests__/common/base';
 import UsecaseList from '../index';
 import correctData from '../../../__mockdata__/correctUsecases';
 

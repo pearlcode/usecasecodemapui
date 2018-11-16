@@ -1,5 +1,5 @@
 import { MemoryRouter as MRouter, Route } from 'react-router-dom';
-import { React, mount } from './base';
+import { React, mount } from '../../../__tests__/common/base';
 
 import correctData from '../../../__mockdata__/correctUsecases';
 import AppRoutes from '../routes';

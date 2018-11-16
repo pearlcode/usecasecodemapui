@@ -1,6 +1,6 @@
 import {
     shallowWithProps,
-} from '../../app/__tests__/base';
+} from '../../../__tests__/common/base';
 
 import usecase from '../usecase';
 
