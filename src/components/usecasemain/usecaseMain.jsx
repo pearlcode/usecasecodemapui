@@ -1,18 +1,40 @@
 import React from 'react';
 import UsecaseMainRoutes from './routes';
+import UsecaseForm from './usecaseForm';
 
+class UsecaseMain extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { showNewUserForm: false };
+        this.clickNewUsecase = this.clickNewUsecase.bind(this);
+        this.clickCloseNewUsecase = this.clickCloseNewUsecase.bind(this);
+    }
 
-const clickNewUsecase = () => {
+    clickNewUsecase() {
+        this.setState({ showNewUserForm: true });
+    }
 
-};
+    clickCloseNewUsecase() {
+        this.setState({ showNewUserForm: false });
+    }
 
-const UsecaseMain = props => (
-    <div className="user-case-main">
-        <button type="button" onClick={clickNewUsecase}>new usercase</button>
-        <div className="section-header">usecase dashboard</div>
-        <UsecaseMainRoutes {...props} />
-    </div>
-);
-
+    render() {
+        const { showNewUserForm } = this.state;
+        return (
+            <div className="user-case-main">
+                <button className="usecase-main_close-button" type="button" onClick={() => this.clickNewUsecase()}>
+                    new usercase
+                </button>
+                {showNewUserForm && (
+                    <UsecaseForm
+                        {...{ clickCloseNewUsecase: this.clickCloseNewUsecase }}
+                    />
+                )}
+                <div className="section-header">usecase dashboard</div>
+                <UsecaseMainRoutes {...this.props} />
+            </div>
+        );
+    }
+}
 
 export default UsecaseMain;

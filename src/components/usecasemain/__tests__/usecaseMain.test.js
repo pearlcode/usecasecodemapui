@@ -37,4 +37,22 @@ describe('usecaseMain', () => {
 
         wrapper.find('button').simulate('click');
     });
+
+    it('should click close', () => {
+        const wrapper = mount(
+            <MRouter initialEntries={[usecaseListPath]}>
+                <Route
+                    path={`${usecaseListPath}`}
+                    render={({ match }) => (
+                        <UsecaseMain {...{ match }} usecases={correctData} />
+                    )}
+                />
+            </MRouter>,
+            {
+                usecases: correctData,
+            },
+        );
+        wrapper.find('button.usecase-main_close-button').simulate('click');
+        wrapper.find('button.usecase-form_close-button').simulate('click');
+    });
 });

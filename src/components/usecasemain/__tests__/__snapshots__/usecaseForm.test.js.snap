@@ -2,7 +2,9 @@
 
 exports[`usecaseForm should render the usecaseForm 1`] = `
 ReactWrapper {
-  Symbol(enzyme.__unrendered__): <UsecaseForm />,
+  Symbol(enzyme.__unrendered__): <UsecaseForm
+    clickCloseNewUsecase={[MockFunction]}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -16,20 +18,76 @@ ReactWrapper {
     "instance": null,
     "key": undefined,
     "nodeType": "function",
-    "props": Object {},
+    "props": Object {
+      "clickCloseNewUsecase": [MockFunction],
+    },
     "ref": null,
     "rendered": Object {
       "instance": <div>
-        New Usecase
+        <div>
+          New Usecase Form
+        </div>
+        <button
+          class="usecase-form_close-button"
+          type="button"
+        >
+          cancel
+        </button>
       </div>,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "New Usecase",
+        "children": Array [
+          <div>
+            New Usecase Form
+          </div>,
+          <button
+            className="usecase-form_close-button"
+            onClick={[Function]}
+            type="button"
+          >
+            cancel
+          </button>,
+        ],
       },
       "ref": null,
       "rendered": Array [
-        "New Usecase",
+        Object {
+          "instance": <div>
+            New Usecase Form
+          </div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "New Usecase Form",
+          },
+          "ref": null,
+          "rendered": Array [
+            "New Usecase Form",
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": <button
+            class="usecase-form_close-button"
+            type="button"
+          >
+            cancel
+          </button>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "cancel",
+            "className": "usecase-form_close-button",
+            "onClick": [Function],
+            "type": "button",
+          },
+          "ref": null,
+          "rendered": Array [
+            "cancel",
+          ],
+          "type": "button",
+        },
       ],
       "type": "div",
     },
@@ -40,20 +98,76 @@ ReactWrapper {
       "instance": null,
       "key": undefined,
       "nodeType": "function",
-      "props": Object {},
+      "props": Object {
+        "clickCloseNewUsecase": [MockFunction],
+      },
       "ref": null,
       "rendered": Object {
         "instance": <div>
-          New Usecase
+          <div>
+            New Usecase Form
+          </div>
+          <button
+            class="usecase-form_close-button"
+            type="button"
+          >
+            cancel
+          </button>
         </div>,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "New Usecase",
+          "children": Array [
+            <div>
+              New Usecase Form
+            </div>,
+            <button
+              className="usecase-form_close-button"
+              onClick={[Function]}
+              type="button"
+            >
+              cancel
+            </button>,
+          ],
         },
         "ref": null,
         "rendered": Array [
-          "New Usecase",
+          Object {
+            "instance": <div>
+              New Usecase Form
+            </div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "New Usecase Form",
+            },
+            "ref": null,
+            "rendered": Array [
+              "New Usecase Form",
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": <button
+              class="usecase-form_close-button"
+              type="button"
+            >
+              cancel
+            </button>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "cancel",
+              "className": "usecase-form_close-button",
+              "onClick": [Function],
+              "type": "button",
+            },
+            "ref": null,
+            "rendered": Array [
+              "cancel",
+            ],
+            "type": "button",
+          },
         ],
         "type": "div",
       },
