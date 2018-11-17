@@ -1,195 +1,293 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`usecaseForm should render the usecaseForm 1`] = `
-ReactWrapper {
-  Symbol(enzyme.__unrendered__): <UsecaseForm
-    clickCloseNewUsecase={[MockFunction]}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "function",
-    "props": Object {
-      "clickCloseNewUsecase": [MockFunction],
-    },
-    "ref": null,
-    "rendered": Object {
-      "instance": <div>
-        <div>
-          New Usecase Form
-        </div>
-        <button
-          class="usecase-form_close-button"
-          type="button"
-        >
-          cancel
-        </button>
-      </div>,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
+initialize {
+  "0": Object {
+    "attribs": Object {},
+    "children": Array [
+      Object {
+        "attribs": Object {},
         "children": Array [
-          <div>
-            New Usecase Form
-          </div>,
-          <button
-            className="usecase-form_close-button"
-            onClick={[Function]}
-            type="button"
-          >
-            cancel
-          </button>,
+          Object {
+            "data": "New Usecase Form",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
         ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": <div>
-            New Usecase Form
-          </div>,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "New Usecase Form",
+        "name": "div",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {
+            "name": "usecaseName",
+            "type": "text",
+            "value": "",
           },
-          "ref": null,
-          "rendered": Array [
-            "New Usecase Form",
-          ],
-          "type": "div",
-        },
-        Object {
-          "instance": <button
-            class="usecase-form_close-button"
-            type="button"
-          >
-            cancel
-          </button>,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "cancel",
-            "className": "usecase-form_close-button",
-            "onClick": [Function],
-            "type": "button",
-          },
-          "ref": null,
-          "rendered": Array [
-            "cancel",
-          ],
-          "type": "button",
-        },
-      ],
-      "type": "div",
-    },
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "function",
-      "props": Object {
-        "clickCloseNewUsecase": [MockFunction],
-      },
-      "ref": null,
-      "rendered": Object {
-        "instance": <div>
-          <div>
-            New Usecase Form
-          </div>
-          <button
-            class="usecase-form_close-button"
-            type="button"
-          >
-            cancel
-          </button>
-        </div>,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <div>
-              New Usecase Form
-            </div>,
-            <button
-              className="usecase-form_close-button"
-              onClick={[Function]}
-              type="button"
-            >
-              cancel
-            </button>,
-          ],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": <div>
-              New Usecase Form
-            </div>,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "New Usecase Form",
-            },
-            "ref": null,
-            "rendered": Array [
-              "New Usecase Form",
+          "children": Array [],
+          "name": "input",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": Object {
+            "attribs": Object {},
+            "children": Array [
+              Object {
+                "attribs": Object {
+                  "class": "usecase-form_close-button",
+                  "type": "button",
+                },
+                "children": Array [
+                  Object {
+                    "data": "cancel",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "button",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "type": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "type": undefined,
+                },
+              },
             ],
-            "type": "div",
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": [Circular],
+            "type": "tag",
+            "x-attribsNamespace": Object {},
+            "x-attribsPrefix": Object {},
           },
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "name": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "name": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+        },
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
+      },
+      Object {
+        "attribs": Object {
+          "name": "usecaseName",
+          "type": "text",
+          "value": "",
+        },
+        "children": Array [],
+        "name": "input",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {},
+          "children": Array [
+            Object {
+              "attribs": Object {
+                "class": "usecase-form_close-button",
+                "type": "button",
+              },
+              "children": Array [
+                Object {
+                  "data": "cancel",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "button",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "type": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "type": undefined,
+              },
+            },
+          ],
+          "name": "div",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": null,
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {},
+          "x-attribsPrefix": Object {},
+        },
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {},
+          "children": Array [
+            Object {
+              "data": "New Usecase Form",
+              "next": null,
+              "parent": [Circular],
+              "prev": null,
+              "type": "text",
+            },
+          ],
+          "name": "div",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": null,
+          "type": "tag",
+          "x-attribsNamespace": Object {},
+          "x-attribsPrefix": Object {},
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "name": undefined,
+          "type": undefined,
+          "value": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "name": undefined,
+          "type": undefined,
+          "value": undefined,
+        },
+      },
+      Object {
+        "attribs": Object {},
+        "children": Array [
           Object {
-            "instance": <button
-              class="usecase-form_close-button"
-              type="button"
-            >
-              cancel
-            </button>,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "cancel",
-              "className": "usecase-form_close-button",
-              "onClick": [Function],
+            "attribs": Object {
+              "class": "usecase-form_close-button",
               "type": "button",
             },
-            "ref": null,
-            "rendered": Array [
-              "cancel",
+            "children": Array [
+              Object {
+                "data": "cancel",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
             ],
-            "type": "button",
+            "name": "button",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+              "type": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+              "type": undefined,
+            },
           },
         ],
-        "type": "div",
-      },
-      "type": [Function],
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
+        "name": "div",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "name": "usecaseName",
+            "type": "text",
+            "value": "",
           },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
+          "children": Array [],
+          "name": "input",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": Object {
+            "attribs": Object {},
+            "children": Array [
+              Object {
+                "data": "New Usecase Form",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": [Circular],
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {},
+            "x-attribsPrefix": Object {},
+          },
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "name": undefined,
+            "type": undefined,
+            "value": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "name": undefined,
+            "type": undefined,
+            "value": undefined,
           },
         },
+        "type": "tag",
+        "x-attribsNamespace": Object {},
+        "x-attribsPrefix": Object {},
       },
+    ],
+    "name": "div",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
     },
+    "type": "tag",
+    "x-attribsNamespace": Object {},
+    "x-attribsPrefix": Object {},
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
   },
 }
 `;

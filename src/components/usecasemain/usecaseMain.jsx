@@ -27,7 +27,7 @@ class UsecaseMain extends React.Component {
                 </button>
                 {showNewUserForm && (
                     <UsecaseForm
-                        {...{ clickCloseNewUsecase: this.clickCloseNewUsecase }}
+                        {...{ close: this.clickCloseNewUsecase }}
                     />
                 )}
                 <div className="section-header">usecase dashboard</div>
