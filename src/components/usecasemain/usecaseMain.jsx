@@ -8,6 +8,7 @@ class UsecaseMain extends React.Component {
         this.state = { showNewUserForm: false };
         this.clickNewUsecase = this.clickNewUsecase.bind(this);
         this.clickCloseNewUsecase = this.clickCloseNewUsecase.bind(this);
+        this.clickSaveNewUsecase = this.clickSaveNewUsecase.bind(this);
     }
 
     clickNewUsecase() {
@@ -15,6 +16,10 @@ class UsecaseMain extends React.Component {
     }
 
     clickCloseNewUsecase() {
+        this.setState({ showNewUserForm: false });
+    }
+
+    clickSaveNewUsecase() {
         this.setState({ showNewUserForm: false });
     }
 
@@ -27,7 +32,10 @@ class UsecaseMain extends React.Component {
                 </button>
                 {showNewUserForm && (
                     <UsecaseForm
-                        {...{ close: this.clickCloseNewUsecase }}
+                        {...{
+                            close: this.clickCloseNewUsecase,
+                            save: this.clickSaveNewUsecase,
+                        }}
                     />
                 )}
                 <div className="section-header">usecase dashboard</div>

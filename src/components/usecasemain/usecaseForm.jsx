@@ -4,7 +4,7 @@ import React from 'react';
 class UsecaseForm extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { usecaseName: '' };
+        this.state = { name: '' };
         this.handleInputChange = this.handleInputChange.bind(this);
     }
 
@@ -15,17 +15,21 @@ class UsecaseForm extends React.Component {
     };
 
     render() {
-        const { close } = this.props;
-        const { usecaseName } = this.state;
+        const { close, save } = this.props;
+        const { name } = this.state;
         return (
             <div>
                 <div>New Usecase Form</div>
                 <input
+                    placeholder="name"
                     type="text"
-                    name="usecaseName"
-                    value={usecaseName}
+                    name="name"
+                    value={name}
                     onChange={this.handleInputChange}
                 />
+                <div>
+                    <textarea placeholder=" description" name="description" onChange={this.handleInputChange} />
+                </div>
                 <div>
                     <button
                         type="button"
@@ -33,6 +37,14 @@ class UsecaseForm extends React.Component {
                         onClick={close}
                     >
 cancel
+                    </button>
+
+                    <button
+                        type="button"
+                        className="usecase-form-save-button"
+                        onClick={save}
+                    >
+                        save
                     </button>
                 </div>
             </div>
@@ -42,6 +54,10 @@ cancel
 
 UsecaseForm.propTypes = {
     close: propTypes.func.isRequired,
+    save: propTypes.func.isRequired,
+};
+
+UsecaseForm.defaultProps = {
 };
 
 export default UsecaseForm;
